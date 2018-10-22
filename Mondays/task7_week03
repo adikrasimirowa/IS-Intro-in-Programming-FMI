@@ -1,0 +1,29 @@
+// Example program
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+    
+    cin>>number;
+    
+    if( number == 0 || number == 4 || number ==  6 || number == 9 )
+    {
+        cout<< "One hole";
+    }
+    else if ( number == 8)
+    {
+        cout<< "Two holes";
+    }
+    else if ( number == 1 || number == 2 || number == 3 || number == 5 || number == 7)
+    {
+        cout<<"No holes";
+    }
+    else 
+    {
+         cout<<"Not a digit";
+    }
+return 0;
+}
