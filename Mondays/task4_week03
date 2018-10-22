@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,x;
+    
+    cin>>a>>b;
+    
+    if(a == 0 || a % b != 0 )
+    {
+        cout<<"NO";
+    }
+    else if( a == 0 && b == 0) {
+        
+        cout<<"INF";
+        
+    }
+    else 
+    {   x = -b/a;
+        cout<<"Yes "<< x;
+    }
+return 0;
+}
