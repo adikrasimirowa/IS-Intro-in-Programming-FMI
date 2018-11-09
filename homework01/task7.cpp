@@ -16,7 +16,7 @@ int main()
         case 1:
             cout<<"January - 31 days"<<endl;
         break;
-        case 2 :
+        case 2:
              if ( year%4 == 0 && year%100 !=0 || year%400 == 0)
             {
                 cout<<"February - 29 days"<<endl;
@@ -53,7 +53,7 @@ int main()
         case 12:
             cout<<"December  - 31 days"<<endl;
         break;
-        default: cout<< "You entered a number bigger than 12";
+        default: cout<<"You entered a number bigger than 12";
     }
 
     return 0;

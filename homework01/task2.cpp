@@ -3,10 +3,12 @@
 using namespace std;
 
 int main()
-{  int month;
-   double loan, rate,amountToReturn;
+{  
+   int month;
+   double loan, rate, amountToReturn;
 
     cout<<"Enter loan,rate and month:"<<endl;
+
     cin>>loan>>rate>>month;
 
     amountToReturn=loan*(1+(month*rate)/100);

@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int num, count=0, lastNum,sum=0,num2,num3,lastNum2;
+    int num, count=0, lastNum, sum=0, num2, num3, lastNum2;
     cin>>num;
     num2=num;
     num3=num;
@@ -21,14 +21,14 @@ int main()
        num2 = num2/10;
        sum+=pow(lastNum2,count);
     }
-    if(num3==sum){
+    if(num3 == sum)
+    {
         cout<<"is narcissistic";
-    }else
+    }
+    else
     {
         cout<<"is not narcissistic";
-
     }
-
-
+    
     return 0;
 }

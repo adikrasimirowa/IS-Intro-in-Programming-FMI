@@ -6,7 +6,8 @@ int main()
 {
    int number, count=0,sum=0;
    cout<<"Enter number:"<<endl;
-   do{
+   do
+   {
     cin>>number;
     if(number > 1)
     {
@@ -14,8 +15,7 @@ int main()
         sum+=number;
     }
    }while(number > 1);
-   cout<<count<<" sum= "<<sum<<" average= "<< sum/count;
-
-
-    return 0;
+   cout<<count<<" sum= "<<sum<<" average= "<<sum/count;
+  
+  return 0;
 }
