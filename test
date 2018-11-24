@@ -1,0 +1,75 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+ int arr[100][100],num,sum=0,sum1=0;
+ //,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0,sum7=0,sum8=0;
+ cin>>num;
+ for(int i = 0 ; i < num; i++)
+ {
+  for(int j = 0 ; j < num; j++)
+  {
+      arr[i][j] = i;
+  }
+ }
+ 
+ for(int i = 0 ; i < num; i++)
+ {
+  for(int j = 0 ; j < num; j++)
+  {
+      cout<<arr[i][j];
+      if(i == 0 ||  i == num-1 || j == 0 || j == num-1)
+      {
+          if(i == 0 && j == 0 )
+          {
+              sum1+=arr[i][j+1]+arr[i+1][j];
+          } 
+          else if(i == num-1 && j == 0) 
+          {
+               sum1+=arr[i][j+1]+arr[i-1][j];
+          }
+          else if(i == num-1 && j == num-1) 
+          {
+               sum1+=arr[i-1][j]+arr[i][j-1];
+          }
+          else if(i == 0 && j == num-1) 
+          {
+              sum1+=arr[i+1][j]+arr[i][j-1];
+          }
+          else if(i == 0)
+          {
+             sum1+=arr[i+1][j]+arr[i][j-1]+arr[i][j+1];
+          }
+          else if(j == 0)
+          {
+              sum1+=arr[i+1][j]+arr[i-1][j]+arr[i][j+1];
+          }
+           else if(i == num-1)
+          {
+              sum1+=arr[i-1][j]+arr[i][j-1]+arr[i][j+1];
+          }
+          else if(j == num-1)
+          {
+              sum1+=arr[i-1][j]+arr[i+1][j]+arr[i][j-1];
+          }
+      }
+      else
+      {
+          sum = arr[i+1][j]+arr[i-1][j]+arr[i][j+1]+arr[i][j-1];       
+      }
+     
+  }
+  cout<<endl;
+ }
+ 
+ cout<<endl;
+// cout<<"sum1 = "<<sum1<<" "<<"sum2 = "<<sum2<<" "<<"sum3 = "<<sum3<<" "<<"sum4 = "<<sum4<<" "<<"sum5 = "<<sum5<<" "<<"sum6 = "<<sum6<<" "<<"sum7 = "<<sum7<<" "<<"sum8 = "<<sum8<<" "<<endl;
+ cout<<"Outer elements sum combination:"<<sum1<<endl;
+ cout<<"Inner elements sum combination:"<<sum<<endl;
+ 
+ cout<<"Sum of combinatons "<<sum1+sum;
+
+ 
+}
