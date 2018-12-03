@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void swap(int * left, int  * right)
+{
+    int temp = * left;
+   * left = * right;
+   * right = temp;
+    
+}
+
+int main()
+{
+ int q =10, p =54; 
+ swap(&q, &p);
+ cout<<q<<" "<<p<<endl;
+ return 0;
+}
