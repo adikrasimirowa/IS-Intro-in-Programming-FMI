@@ -13,6 +13,18 @@ int abs(int num)
     return num;
 }
 
+double pow( double num, int num1)
+{
+    double result = 1;
+    
+    for(int i = 0; i <num1; i++)
+    {
+        result = result*num;
+    }
+    
+    return result;
+}
+
 double Min(double x, double y)
 {
     if(x < y)
@@ -25,19 +37,6 @@ double Min(double x, double y)
     }
 }
 
-
-
-void pow( int num, double num1)
-{   
-    int result = 0;
-    for(int i=0; i<num; i++)
-    {
-        result = num1;
-        num1=result*num1;
-    }
-    
-    cout<<num1;
-}
 
 double Max(double x, double y)
 {
@@ -93,26 +92,26 @@ void isDigit(char number)
 
 int main()
 {
-    //int num;
-   // double num2,num3,num4;
-   // char letter;
+    int num;
+   double num2,num3,num4;
+   char letter;
    char number;
    cin>>number;
-   // cin>>letter;
-   // cin>> num;
-   // cin>> num2;
-    //cin>>num3;
-   // cin>>num4;
-    //cout<<abs(num);
+   cin>>letter;
+    cin>> num;
+   cin>> num2;
+    cin>>num3;
+    cin>>num4;
+    cout<<abs(num);
     
-   // pow(num,num2);
+  cout<< pow(num2,num);
    
-  // cout<<Min(num2,num3)<<endl;
-  // cout<<Max(num2,num3)<<endl;
-  // cout<<minOf3(Min(num2,num3),Min(num2,num4));
-  // cout<<maxOf3(Max(num2,num3),Max(num2,num4));
+  cout<<Min(num2,num3)<<endl;
+   cout<<Max(num2,num3)<<endl;
+   cout<<minOf3(Min(num2,num3),Min(num2,num4));
+  cout<<maxOf3(Max(num2,num3),Max(num2,num4));
    
-   //isAlpha(letter);
+   isAlpha(letter);
    isDigit(number);
   
 }
