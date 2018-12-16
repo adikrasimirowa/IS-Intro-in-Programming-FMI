@@ -88,7 +88,10 @@ void isAlpha(char letter)
 void isDigit(char number)
 {
     int n = number;
-      cout<<n;
+      if(n >= 48 && n <= 57)
+      {
+         cout<<"True";
+      }
 }
 
 int main()
