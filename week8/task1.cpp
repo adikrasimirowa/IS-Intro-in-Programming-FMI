@@ -1,4 +1,4 @@
-// Example program
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -62,6 +62,7 @@ double minOf3(double x, double y )
         return y;
     }
 }
+
 double maxOf3(double x, double y )
 {
     
@@ -92,26 +93,32 @@ void isDigit(char number)
 
 int main()
 {
-    int num;
+   int num;
    double num2,num3,num4;
    char letter;
    char number;
-   cin>>number;
-   cin>>letter;
-    cin>> num;
-   cin>> num2;
+   cout<<"Enter 3 (type double) numbers:"<<endl;
+    cin>> num2;
     cin>>num3;
     cin>>num4;
-    cout<<abs(num);
+    cout<<endl;
+   cout<<"Enter number (type int):"<<endl;
+    cin>> num;
+    cout<<endl;
+   cout<<"Enter number:"<<endl;
+     cin>>number;
+     cout<<endl;
+   cout<<"Enter letter:"<<endl;
+   cin>>letter;
     
-  cout<< pow(num2,num);
+    cout<<"Abs of "<<num<<" is"<<abs(num)<<endl; 
+    cout<<"POW of "<<num2<<" is"<<pow(num2,num)<<endl;
+    cout<<"Min of "<<num2<<" and"<<num3<<" is"<<Min(num2,num3)<<endl;
+    cout<<"Max of "<<num2<<" and"<<num3<<" is"<<<Max(num2,num3)<<endl;
+    cout<<"Min of "<<num2<<", "<<num3<<"and"<<num4<<" is"<<minOf3(Min(num2,num3),Min(num2,num4))<<endl;
+    cout<<"Max of "<<num2<<", "<<num3<<"and"<<num4<<" is"<<maxOf3(Max(num2,num3),Max(num2,num4));
    
-  cout<<Min(num2,num3)<<endl;
-   cout<<Max(num2,num3)<<endl;
-   cout<<minOf3(Min(num2,num3),Min(num2,num4));
-  cout<<maxOf3(Max(num2,num3),Max(num2,num4));
-   
-   isAlpha(letter);
-   isDigit(number);
+    isAlpha(letter);
+    isDigit(number);
   
 }
