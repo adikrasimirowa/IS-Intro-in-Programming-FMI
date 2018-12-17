@@ -19,7 +19,7 @@ bool CheckPrime(int number)
     return isPrime;
 }
 
-void Sdvoini( int n, int m )
+void Sdvoeni( int n, int m )
 {
 
     if( CheckPrime(n) && CheckPrime(m) )
@@ -41,6 +41,6 @@ int main()
 
   cin>>n>>m;
   
-  Sdvoini(n,m);
+  Sdvoeni(n,m);
   
 }
