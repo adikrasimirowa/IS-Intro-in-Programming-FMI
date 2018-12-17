@@ -13,7 +13,8 @@ void Matrix(int arr[], int n)
 }
 
 void NewMatrix(int arr[], int n)
-{   
+{  
+    Matrix(arr,n);
     for(int i=n-1 ; i>=0; i--)
    {
        cout<<arr[i];
@@ -24,6 +25,5 @@ int main()
     int arr[100];
     int n;
     cin>>n;
-    Matrix(arr,n);
     NewMatrix(arr,n);
 }
