@@ -2,10 +2,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
- int arr[100];
  
-void Matrix( int n)
+void Matrix(int arr[], int n)
 {  
    for(int i=0 ; i<n; i++)
    {
@@ -14,7 +12,7 @@ void Matrix( int n)
     
 }
 
-void NewMatrix( int n)
+void NewMatrix(int arr[], int n)
 {   
     for(int i=n-1 ; i>=0; i--)
    {
@@ -23,8 +21,9 @@ void NewMatrix( int n)
 }
 int main()
 {
+    int arr[100];
     int n;
     cin>>n;
-    Matrix(n);
-    NewMatrix(n);
+    Matrix(arr,n);
+    NewMatrix(arr,n);
 }
