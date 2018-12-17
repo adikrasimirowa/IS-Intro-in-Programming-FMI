@@ -17,7 +17,7 @@ void Matrix(int arr[], int n)
 void EvenOdd(int arr[], int n)
 {    Matrix(arr,n);
     int odd=0, even=0;
-    for(int i=n-1 ; i>=0; i--)
+    for(int i=0 ; i<n; i++)
    {
        if(arr[i]%2 == 0)
        {
