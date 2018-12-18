@@ -1,22 +1,22 @@
 #include <iostream>
-#include <string>
 using namespace std;
-
-void swap(int *num1, int *num2){
-
-    int temp;
-    temp = *num1;
-    *num1 = *num2;
-    *num2 = temp;
-    
-    cout<< *num1<<" "<<*num2;
-
+void swap(int& left, int& right)
+{
+	int temp = left;
+	left = right;
+	right = temp;
+	
+	cout<<left<<right;
 }
 
 int main()
 {
     int num1,num2;
-    cin>>num1>>num2;
+    
+    cin>>num1;
+    cin>>num2;
     
     swap(num1,num2);
+
+	return 0;
 }
