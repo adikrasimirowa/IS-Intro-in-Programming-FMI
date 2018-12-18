@@ -1,0 +1,58 @@
+#include <iostream>
+
+using namespace std;
+
+int strlen( char * text)
+{
+    int count = 0;
+    for(int i =0; text[i] !='\0'; i++)
+    {
+        count++;
+    }
+
+    return count;
+}
+
+void change( char * text, char  symbol1 , char symbol2)
+{
+     for(int i =0; text[i] !='\0'; i++)
+    {
+
+        if(text[i] == symbol1 )
+        {
+            text[i] = symbol2;
+        }
+    }
+    cout<<text;
+}
+
+void remove( char * text, char symbol)
+{
+    char result[100];
+     for(int i =0; text[i] !='\0'; i++)
+    {
+
+        if(text[i] != symbol )
+        {
+            result[i] = text[i];
+        }
+    }
+    cout<<result;
+}
+
+int main()
+{
+    char text[100];
+    char sym1;
+    char sym2;
+
+    cin>>sym1;
+   // cin>>sym2;
+    //cin>>text;
+    //cin>>ws;
+    cin.getline(text,100);
+   // cout<<strlen(text);
+   //change(text,sym1,sym2);
+   remove(text,sym1);
+    return 0;
+}
